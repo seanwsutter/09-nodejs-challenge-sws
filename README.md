@@ -10,9 +10,9 @@
 
 ## Installation
 
-- Clone repository on your local machine
+- Clone repository to your local machine
 - Open new terminal window for the `index.js` file
-- Type `npm i` then enter to install required packages
+- Type `npm i` then hit enter to install required packages
 - Type `node index.js` then hit enter to start the application
 - Finish answering questions in the prompt window
 

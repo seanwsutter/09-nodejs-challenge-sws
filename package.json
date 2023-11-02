@@ -1,14 +1,18 @@
 {
-  "name": "static-site",
+  "name": "09-nodejs-challenge-sws",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Overview",
   "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "8.2.4"
+    "inquirer": "^8.2.4"
   }
 }

@@ -18,6 +18,25 @@ function renderLicenseBadge(response) {
   return licenseChoice;
 }
 
+function renderLicenseLink(response) {
+  var licenseOption = response.license;
+  var licenseChoice;
+
+  if (licenseOption === "Apache License 2.0") {
+    licenseChoice = `https://opensource.org/licenses/Apache-2.0`
+  } else if (licenseOption === "Boost Software License 1.0") {
+    licenseChoice = `https://www.boost.org/LICENSE_1_0.txt`
+  } else if (licenseOption === "BSD 3-Clause License") {
+    licenseChoice = `https://opensource.org/licenses/BSD-3-Clause`
+  } else if (licenseOption === "BSD 2-Clause License") {
+    licenseChoice = `https://opensource.org/licenses/BSD-2-Clause`
+  }
+  else {
+    licenseChoice = "";
+  }
+  return licenseChoice;
+}
+
 
 
 // function to generate README
@@ -43,7 +62,7 @@ function generateMarkdown(response) {
   ${response.usage}
 
   ## License
-  ${response.license} 
+  ${response.license} [URL](${renderLicenseLink(response)})
 
   ## Contributions
   ${response.contributions}

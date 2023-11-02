@@ -66,14 +66,15 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, response) {
-  fs.writeFile(fileName, response, (error) => error ?
+  fs.writeFile(fileName, response, (err) => err ?
 
-    console.error(error) : console.log("writeToFile function sucess"));
+    console.error(err) : console.log("writeToFile function sucess"));
 }
 
 // function to initialize app
 function init() {
-  inquirer.prompt(questions).then(response => {
+  inquirer.prompt(questions)
+    .then(response => {
     console.log("response:", response);
 
     writeToFile("./example/newREADME.md", generateMarkdown(response));

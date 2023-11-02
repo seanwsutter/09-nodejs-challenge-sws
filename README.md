@@ -18,7 +18,13 @@
 
 ## Video Tutorial 
 
-(soon)
+[YouTube URL](https://www.youtube.com/watch?v=nEuImj2pQU0)
+
+## Preview
+
+![Image Preview](https://i.imgur.com/k2QV0lS.png)
+
+
 
 
 
